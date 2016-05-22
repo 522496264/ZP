@@ -27,6 +27,7 @@ a {
 }
 img {
   border: none;
+  height: 187px;
 }
 * {
   box-sizing: border-box;
