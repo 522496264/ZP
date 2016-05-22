@@ -139,7 +139,6 @@ j(function() {
 		return "rgb(" + parseInt(255 * Math.random()) + "," + parseInt(255 * Math.random()) + "," + parseInt(255 * Math.random()) + ")";
 
 	}
-
 })
 j(function() {
 	j(".three span").hover(function() {
