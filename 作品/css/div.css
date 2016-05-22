@@ -1,0 +1,5 @@
+@import url(base.css);
+@import url(ps.css);
+body,b,i,strong,u,h1,h2,h3,h4,h5,h6,span,ul,ol,dl,dt,dd,div,a,input{margin:0;padding:0;text-decoration:none;list-style:none;}
+div{height:auto;font-family:微软雅黑;margin:0 auto ;padding: 0;}
+span{font-family:微软雅黑;font-size:11px;}

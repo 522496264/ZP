@@ -1,0 +1,95 @@
+html {
+  font-size: 24px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+form,
+dl,
+ol,
+ul,
+li,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+*[data-role=button] {
+  width: 100%;
+  height: auto;
+  color: #000000;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #cccccc;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 10px #000000;
+}
+*[data-role=button][btn-opi=horizontal] {
+  width: 100%;
+  height: auto;
+  color: #000000;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #cccccc;
+  display: inline;
+  text-align: center;
+  box-shadow: 0 0 10px #000000;
+}
+*[radius=false] {
+  border-radius: 0!important;
+}
+ul[data-role=listview] {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000000;
+}
+ul[data-role=listview]:before,
+ul[data-role=listview]:after {
+  content: "";
+  display: block;
+}
+ul[data-role=listview]:after {
+  clear: both;
+}
+ul[data-role=listview] > li {
+  padding: 0.5rem;
+  height: auto;
+  font-size: 0.6rem;
+  border-bottom: 1px solid #000000;
+}
+ul[data-role=listview] > li[data-role=arrow]:after {
+  content: ">";
+  display: block;
+  float: right;
+  margin-right: 0.5rem;
+}
+ul[data-role=listview] > li[data-role=arrow]:after {
+  content: ">";
+  display: block;
+  float: right;
+  margin-right: 0.4rem;
+}
+ul[data-role=listview][listview=horizontal] > li {
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  border-right: 1px solid #000000;
+  float: left;
+}
+ul[data-role=listview] > li:last-of-type {
+  border: none;
+}

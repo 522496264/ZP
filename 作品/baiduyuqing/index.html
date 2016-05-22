@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="nav">
+				<div class="con">
+					<a href="#"></a>
+					<div class="nav-center">
+						<div class="nav-1">用户版</div>
+						<div class="nav-1">产品介绍</div>
+						<div class="nav-1">首页</div>
+					</div>
+					<div class="nav-right">
+						<div class="nav-2">手机客户端</div>
+						<div class="nav-2">百度司南</div>
+						<div class="nav-2">联系我们</div>
+						<div class="nav-2">声请使用</div>
+					</div>
+				</div>
+				<div class="min">
+					<a href="#"></a>
+					<div class="nav-min-right">三</div>
+				</div>
+			</div>
+	<div class="out">
+		<div class="box">
+			<div class="inner1">
+				<div class="imgs">
+				<img src="images/flight_ade8ee2.png" alt="">
+				<img src="images/launch_deea86c.png" alt="">
+				<img src="images/ship_1ad6734.png" alt="">
+				<img src="images/hill_1_0d79217.png" alt="">
+				<img src="images/hill_2_540422f.png" alt="">
+				<img src="images/hill_3_ace39fb.png" alt="">
+				<img src="images/cloud_2_a186193.png" alt="">
+				</div>
+				<div class="login">
+					<div class="login-info">
+						<div class="user"></div>
+						<div class="pwd"></div>
+						<input type="text" class="yanzhen">
+						<img src="images/cas.baidu.com.jpg" alt="">
+						<span class="huan">换一张</span>
+					</div>
+					<div class="login-active">
+						<div class="btn">登录</div>
+						<div class="other">
+							<a href="#">常见安全问题</a>
+							<a href="#">忘记密码</a>
+						</div>
+					</div>
+				</div>
+				<div class="bottom1"></div>
+			</div>
+			<div class="inner2">
+				<div class="inner2img">
+					<div class="inner2left col-xs-2 col-sm-1 ">
+						<img src="images/h_lingxian_221f2d8.png" alt="">
+						<div class="inner2top">数据收集与处理</div>
+						<div class="inner2bottom">15年专业数据收集与语义分析技术积累<br>卓越极致，不断攀登</div>
+					</div>
+					<div class="inner2right col-xs-2 col-sm-1">
+						<img src="images/brain_36a156f.png" alt="">
+					</div>
+					
+				</div>	
+			</div>
+			<div class="inner3">
+				<div class="inner2img inner3img">
+				<div class="inner2left col-xs-2 col-sm-1 ">
+					<img src="images/h_quanmian_8f813d2.png" alt="">
+					<div class="inner2top">舆情分析逻辑与架构</div>
+					<div class="inner2bottom">声量诊断、传播分析、情感提炼<br>有方法论，更有智慧</div>
+				</div>
+				<div class="inner2right col-xs-2 col-sm-1 ">
+					<img src="images/allside_e8abd12.png" alt="">
+				</div>
+				</div>
+			</div>
+			<div class="inner4">
+				<div class="inner2img inner4img">
+				<div class="inner2left col-xs-2 col-sm-1 ">
+					<img src="images/h_zhuanye_256a94d.png" alt="">
+					<div class="inner2top">专业数据可视化</div>
+					<div class="inner2bottom">非凡的数据洞悉和可视化能力<br>精研数据，惊艳所见</div>
+				</div>
+				<div class="inner2right col-xs-2 col-sm-1 ">
+					<img src="images/stat_8934528.png" alt="">
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	var istouch='ontouchstart' in window;
+	if(istouch){
+		var mousedown='touchstart';
+		var mousemove='touchmove';
+		var mouseup='touchend';
+	}else{
+		var mousedown='mousedown';
+		var mousemove='mousemove';
+		var mouseup='mouseup';
+	}
+	var box=document.querySelector('.box');
+	var inner1=document.querySelector('.inner1');
+	var ih=inner1.offsetHeight;
+	var i=0;
+	var ch=0;
+	var inner2img=document.querySelector('.inner2img');
+	var inner3img=document.querySelector('.inner3img');
+	var inner4img=document.querySelector('.inner4img');
+	box.addEventListener(mousedown,down);
+	function down(e){
+		e.preventDefault();
+		var stime=e.timeStamp;
+		e=istouch?e.changedTouches[0]:e;
+		var dx=e.clientY;
+		var mx=0;
+		var cha=0;
+		document.addEventListener(mousemove,move);
+		function move(e){
+			e=istouch?e.changedTouches[0]:e;
+			mx=e.clientY;
+			cha=mx-dx;
+			box.style.transform="translateY("+(ch+cha)+"px)";
+		}
+		document.addEventListener(mouseup,up);
+		function up(e){
+			var etime=e.timeStamp;
+			var lent=etime-stime;
+			if(cha<0){
+				aa(1)
+			}else{
+				aa(-1)
+			}
+			function aa(q){
+				//判断一下如果位移超过一半或时间少于200ms的话就切换
+				if(Math.abs(cha)>ih/3||(lent<200&&Math.abs(cha)>30)){
+				i+=q;
+				//开头和结尾不进行切换
+				if(i<0){i=0}else if(i>3){i=3}
+				box.style.transition="transform 0.3s"
+				box.style.transform="translateY("+(-ih*i)+"px)";
+				}else{	
+					box.style.transition="transform 0.3s"
+					box.style.transform="translateY("+(-ih*i)+"px)";
+				}
+			}
+			ch=-ih*i;
+			if(i==1){
+				inner2img.className="inner2img active"
+			}else{
+				inner2img.className="inner2img"
+			}
+			if(i==2){
+				inner3img.className="inner2img inner3img active"
+			}else{
+				inner3img.className="inner2img inner3img"
+			}
+			if(i==3){
+				inner4img.className="inner2img inner4img active"
+			}else{
+				inner4img.className="inner2img inner4img"
+			}
+
+			document.removeEventListener(mouseup,up);
+			document.removeEventListener(mousemove,move);
+		};
+		
+	}
+
+
+	
+	</script>
+</body>
+</html>

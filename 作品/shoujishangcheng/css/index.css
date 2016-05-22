@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+}
+body,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  border: 0;
+}
+a {
+  font-size: 12px;
+  font-family: Helvetica;
+  color: #999;
+}
+.one {
+  display: block;
+  color: #555555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  height: 16px;
+  line-height: 16px;
+  white-space: nowrap;
+  margin: 7px 8px 0 ;
+}
+.main {
+  max-width: 768px;
+  height: auto;
+}
+.main .header {
+  max-width: 768px;
+  margin: 0px auto;
+}
+.main .header .banner {
+  max-width: 720px;
+  max-height: 300px;
+  margin: 0px auto;
+}
+.main .header .banner img {
+  max-width: 100%;
+}
+.main .nav {
+  margin: auto;
+  max-width: 720px;
+  height: 103px;
+  text-align: justify;
+  padding-top: 15px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.main .nav:after {
+  content: "";
+  display: inline-block;
+  line-height: 0px;
+  width: 100%;
+  height: 0px;
+  font-size: 0px;
+}
+.main .nav a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  font-family: Helvetica;
+  color: #999;
+}
+.main .nav a img {
+  width: 50px ;
+  height: 50px;
+}
+.main .ro {
+  max-width: 768px ;
+  height: 10px;
+  background: #f4f4f4;
+}
+.main .floor1 {
+  max-width: 768px ;
+  height: 40px;
+  padding-top: 12px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.main .floor1 .fL {
+  float: left;
+  margin-left: 20px;
+}
+.main .floor1 .fL span {
+  color: red;
+  font-size: 14px;
+}
+.main .floor1 .fC {
+  float: left;
+  margin-left: 10px;
+}
+.main .floor1 .fC span {
+  color: #666;
+}
+.main .floor1 .fR {
+  float: right;
+  margin-right: 20px;
+}
+.main .floor1 .fR span {
+  color: #666;
+  font-size: 14px;
+}
+.main .floor1C {
+  width: 100% ;
+  height: 162px;
+  padding-top: 10px;
+}
+.main .floor1C div {
+  width: 33.3333%;
+  height: 142px;
+  float: left;
+  text-align: center;
+}
+.main .floor1C div img {
+  width: 95px;
+  height: 95px;
+}
+.main .floor1C div span {
+  display: block;
+  margin-top: 8px;
+}
+.main .floor1C div:nth-child(1) {
+  border-right: 1px solid #f4f4f4;
+}
+.main .floor1C div:nth-child(2) {
+  border-right: 1px solid #f4f4f4;
+}
+.main .floornav {
+  width: 768px;
+  height: 35px;
+  background: #f4f4f4;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666;
+}
+.main .floor2 {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.main .floor2 div {
+  width: 50%;
+  height: 254px;
+  float: left;
+  text-align: center;
+}
+.main .floor2 div .imgs {
+  width: 150px;
+  height: 150px;
+}
+.main .floor2 div .icon2 {
+  display: block;
+  width: 90px;
+  height: 27px;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  margin: 20px auto 10px;
+  line-height: 27px;
+}
+.main .floor2 div .icon2 img {
+  display: block;
+  width: 17px!important;
+  height: 17px!important;
+  float: left;
+  margin-top: 5px;
+  margin-left: 4px;
+}
+.main .floor2 div .icon2 span {
+  color: #555;
+}
+.main .floor2 div:nth-child(odd) {
+  border-right: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+}
+.main .floor2 div:nth-child(even) {
+  border-bottom: 1px solid #f4f4f4;
+}
+.main .floor3 {
+  width: 100%;
+  max-height: 433px;
+}
+.main .floor3 img {
+  width: 100%;
+  max-height: 433px;
+}
+.main .bottom {
+  padding-left: 20px;
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+}
+.main .bottom p {
+  line-height: 10px;
+  font-size: 12px;
+  color: #666;
+}
+.main .bottom p strong {
+  color: #555;
+  font-size: 14px;
+}
+.main .four {
+  padding-top: 30px;
+}
+.main .four img {
+  display: block;
+  margin: 0 auto;
+}
+.main .four span {
+  display: block;
+  float: left;
+  clear: both;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+.main .footer {
+  width: 100%;
+  height: 78px;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #f4f4f4;
+}
+.main .footer div {
+  width: 33.33333333%;
+  height: 58px;
+  margin-top: 10px;
+  float: left;
+}
+.main .footer div li:nth-child(1) {
+  text-align: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  margin: 0 auto;
+  line-height: 33px;
+}
+.main .footer div li:nth-child(2) {
+  text-align: center;
+  margin: 10px auto ;
+}
+.main .footer div:nth-child(1) {
+  border-right: 1px solid #999;
+}
+.main .footer div:nth-child(2) {
+  border-right: 1px solid #999;
+}
+.main .fotter2 {
+  width: 100%;
+  height: 54px;
+}
+.main .fotter2 p {
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  color: #999999;
+}
+.main .footer-nav {
+  position: fixed;
+  width: 768px;
+  height: 56px;
+  bottom: 0;
+  z-index: 99;
+  background: #ffffff;
+}
+.main .footer-nav .footer-nav-c {
+  width: 92%;
+  height: 100%;
+  margin: 0px auto;
+  text-align: justify;
+}
+.main .footer-nav .footer-nav-c:after {
+  content: "";
+  width: 100%;
+  height: 0px;
+  line-height: 0px;
+  font-size: 0px;
+  display: inline-block;
+}
+.main .footer-nav .footer-nav-c a {
+  text-align: center;
+  display: inline-block;
+  width: 53px;
+  height: 33px;
+}
+.main .footer-nav .footer-nav-c a img {
+  width: 53px;
+  height: 33px;
+}
+.main .footer-nav .footer-nav-c span {
+  color: #666;
+}
+.main .down {
+  width: 768px;
+  height: 42px;
+  background: #474747;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+  padding-left: 10px;
+}
+.main .down .end {
+  display: block;
+  float: left;
+  margin-top: 14px;
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+}
+.main .down .youqing {
+  display: block;
+  float: left;
+  margin-top: 4px;
+  width: 35px;
+  height: 35px;
+}
+.main .down span {
+  font-size: 14px;
+  color: #fff;
+  font-family: '' Helvetica;
+  font-weight: 400;
+}
+.main .down .downtop {
+  float: left;
+  margin-left: 10px;
+}
+.tiao {
+  max-width: 768px;
+  height: 40px;
+  overflow: hidden;
+}
+.tiao .left {
+  margin-top: 12px;
+  float: left;
+  margin-left: 20px;
+}
+.tiao .left a img {
+  max-width: 63px;
+  height: 16px;
+}
+.tiao .xian {
+  max-width: 1px;
+  height: 16px;
+  background: #999;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+.tiao .right {
+  max-width: 65%;
+  height: 100%;
+  line-height: 14px;
+  float: left;
+}
+.tiao .right a span {
+  color: #FFDE00;
+}
+.tiao .toutiao {
+  height: 40px;
+  line-height: 14px;
+}

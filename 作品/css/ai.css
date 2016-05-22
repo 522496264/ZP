@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 3000px;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.box {
+    width: 100%;
+}
+
+.psone {
+    background: #9C58B6;
+    z-index: 1;
+    background: url("../img/bg10.jpg")no-repeat 0 0;
+    background-size: cover;
+}
+#name {
+    font-size: 56px;
+    color: #fff;
+    text-shadow: 1px 2px #22C3AA, 2px 4px #AEE2D9;margin-top:50px ;
+}
+
+#name1 {
+    font-size: 20px;
+    color: #ccc;
+    margin-top: 30px;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+.box{
+    width: 920px;
+    height:150px;
+    margin: 0 auto;
+    margin-top:100px ;
+}
+.lBtn,.rBtn{
+    width: 20px;
+    height: 100%;
+    font-size: 20px;
+    line-height: 200px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    position: relative;
+    background-color: #ccc;
+}
+.lBtn div,.rBtn div{
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top:0;left:0;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;
+}
+.win{
+    width:880px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+.win .con{
+    width: 3000px;
+    height: 100%;
+}
+.win .con .list{
+    width: 200px;
+    height: 100%;
+    float: left;
+    padding: 0 10px;
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center;
+    
+}
+.win .con .list div{
+    width: 200px;
+    height: 250px;
+    font-size: 30px;
+    line-height: 200px;
+    text-align: center;
+
+}
+.win .con .list div img{
+    margin-top:2px ;
+}
+
+

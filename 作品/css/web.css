@@ -1,0 +1,99 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+dl,
+ul,
+ol,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: 14px/1.5 "Helvetica Neue", "Helvetica", "Arial", "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", "sans-serif";
+}
+body {
+  background: url("../img/bg12.jpg")no-repeat 0 0;
+  /*background-size: cover;*/
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  border: none;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.eot');
+  /* IE9*/
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('iconfont.woff') format('woff'), /* chrome、firefox */ url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('iconfont.svg#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+
+/*design start*/
+.design {
+  height: auto;
+  margin: 20px auto;
+}
+.design .s-t {
+  height: 65px;
+  font-size: 26px;
+  text-align: center;
+  color: #0879F2;
+  line-height: 65px;
+  margin: 15px 0;
+}
+.design .design-box {
+  height: auto;
+  overflow: hidden;
+}
+.design .design-box li[class*=col] {
+  height: 226px;
+  padding: 15px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+  float: left;margin-left: 15px;
+}
+.design .design-box li[class*=col] img {
+  width: 400px;
+}
+.design .design-box li[class*=col] p {
+  z-index: 2;
+  width: 400px;
+  height: 0px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.scene {
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#name {
+  font-size: 56px;
+  color: #fff;
+  text-shadow: 1px 2px #22C3AA, 2px 4px #AEE2D9;
+}
+
+#name1 {
+  font-size: 20px;
+  color: #ccc;
+  margin-top: 30px;
+}
+/*design end*/
+
